@@ -17,7 +17,11 @@ public class Account {
 	}
 	
 	public void Withdraw(double num){
-		balance = balance - num;
+		if (num <= balance) {
+			balance = balance - num;
+		} else {
+			System.out.println("You can't withdraw more than your account balance.");
+		}
 	}
 	
 	public void setBalance(double num){
@@ -32,8 +36,8 @@ public class Account {
 		return acctNumberInd;
 	}
 
-	public void setAcctNumber(int acctNumberInd) {
-		this.acctNumberInd = acctNumberInd;
+	public void setAcctNumber(int num) {
+		acctNumberInd = num;
 	}
 
 }
