@@ -11,6 +11,7 @@ public class Bank {
 		Transfer(acct1, acct2, 300.06);
 		System.out.println(acct1.getBalance());
 		System.out.println(acct2.getBalance());
+		
 	}
 	
 	public static void Transfer(Account giver, Account receiver, double amount) {
