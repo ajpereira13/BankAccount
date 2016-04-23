@@ -12,20 +12,20 @@ public class Account {
 		acctNumberInd = acctNumber;
 	}
 	
+	public void Deposit(double num){
+		balance = balance + num;
+	}
+	
+	public void Withdraw(double num){
+		balance = balance - num;
+	}
+	
 	public void setBalance(double num){
 		balance = num;
 	}
 	
 	public double getBalance(){
 		return balance;
-	}
-	
-	public void deposit(double num){
-		balance = balance + num;
-	}
-	
-	public void withdraw(double num){
-		balance = balance - num;
 	}
 
 	public int getAcctNumber() {
