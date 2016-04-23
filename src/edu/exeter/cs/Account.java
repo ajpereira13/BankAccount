@@ -32,12 +32,17 @@ public class Account {
 		return balance;
 	}
 
-	public int getAcctNumber() {
+	public int getAcctNumber(){
 		return acctNumberInd;
 	}
 
-	public void setAcctNumber(int num) {
+	public void setAcctNumber(int num){
 		acctNumberInd = num;
+	}
+	
+	public String toString(){
+		String result = Double.toString(balance);
+		return result;
 	}
 
 }
