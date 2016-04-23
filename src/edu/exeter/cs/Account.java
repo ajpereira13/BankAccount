@@ -23,12 +23,5 @@ public class Account {
 	public double getBalance(){
 		return balance;
 	}
-	
-	public int setAcctNum(){
-		
-	}
-	
-	public int getAcctNum(){
-		
-	}
+
 }
