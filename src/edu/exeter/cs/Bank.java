@@ -9,7 +9,8 @@ public class Bank {
 		acct1.Deposit(500.26);
 		acct2.Deposit(23.54);
 		Transfer(acct1, acct2, 300.06);
-		System.out.println(acct1.getBalance());
+		System.out.println(acct1);
+		System.out.println(acct2);
 		
 	}
 	
