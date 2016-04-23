@@ -35,10 +35,6 @@ public class Account {
 	public int getAcctNumber(){
 		return acctNumberInd;
 	}
-
-	public void setAcctNumber(int num){
-		acctNumberInd = num;
-	}
 	
 	public String toString(){
 		String result = Double.toString(balance);
