@@ -3,17 +3,15 @@ package edu.exeter.cs;
 public class Account {
 	
 	private double balance;
-	private static int acctNumber = 0;
-	private int acctNumberInd = 0;
+	private String name;
 	
-	public Account(){
-		balance = 0;
-		acctNumber++;
-		acctNumberInd = acctNumber;
+	public Account(String name, double balance){
+		this.name = name;
+		this.balance = balance;
 	}
 	
 	public void Deposit(double num){
-		balance = balance + num;
+		balance += num;
 	}
 	
 	public void Withdraw(double num){
@@ -31,14 +29,18 @@ public class Account {
 	public double getBalance(){
 		return balance;
 	}
+	
+	public String getName() {
+		return name;
+	}
 
-	public int getAcctNumber(){
-		return acctNumberInd;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public String toString(){
-		String result = Double.toString(balance);
-		return result;
+		String str1 = Double.toString(balance);
+		return name + "'s account has " + str1 + ".";
 	}
 
 }
