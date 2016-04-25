@@ -22,12 +22,12 @@ public class Account {
 		}
 	}
 	
-	public void setBalance(double num){
-		balance = num;
-	}
-	
 	public double getBalance(){
 		return balance;
+	}
+	
+	public void setBalance(double balance){
+		this.balance = balance;
 	}
 	
 	public String getName() {
